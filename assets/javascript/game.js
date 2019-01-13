@@ -11,23 +11,23 @@ compNumber = Math.floor(Math.random() * 20) + 60;
 console.log("Random number is " + compNumber);
 compContain = $("#comp-number");
 compContain.html("Goal: " + compNumber);
-compContain.addClass("comp-box");
+compContain.addClass('comp-box');
 
 for (var i = 0; i < 4; i++) {
     var random = Math.floor(Math.random() * 15) + 2;
     console.log(random);
     var crystal = $("<img>");
-    crystal.attr({"class": 'crystal', "data-random": random});
+    crystal.attr({"class": 'crystal', "data-random": random, "src": "assets/images/gem1.png"});
     $(".container-crystal").append(crystal);
-    
 }
     $(function(){
-    //var newPhoto = $("newPhoto").find("<img>").eq(1)
-    //newPhoto.attr("src", "../images2/gem1.png");
+    //var newPhoto = $(".container-crystal").find("<img>").eq(4)
+   //newPhoto.attr("src", "../assets/images/gem1.png");
 
-    var photo = $("<img>")
-    photo.attr("src", "../images/gem1.png");
-    $(".newPhoto").append(photo);
+    //var photo = $(".container-crystal")
+    //photo.append("<img>");
+    //photo.attr("src", "assets/images/gem1.png");
+    //$(".newPhoto").append(photo);
         });
 
 }
@@ -39,7 +39,7 @@ startGame();
 $(".container-crystal").on("click", ".crystal" , function () {
 
    var num = parseInt ($(this).attr("data-random"));
-    counter += num;$("#previous").html("Score: " + counter );
+    counter += num;$("#goal").html("Score: " + counter );
 
     console.log("this is the count " + counter);
     if (counter > compNumber) {
