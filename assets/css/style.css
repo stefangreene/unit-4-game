@@ -2,14 +2,20 @@ div#background{
     background-color: rgb(238, 238, 235);
 }
 h3.header{
-    font-size: 60px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     color: chocolate; 
 }
-.container-crystal{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.crystal{
+    float: left;
+    border: 3px;
+    border-color:black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 250px;
+    width: 175px;
+    margin: 20px;
+
     }
 .comp-box{
     height: 50px;
@@ -19,9 +25,8 @@ h3.header{
     font-weight: 900;
     color: blue;
     }
-.crystal{
-    border: 3px;
-    border-color:black;
-    height: 300px;
-    width: 250px;
+p   {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: blue;
     }
