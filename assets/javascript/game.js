@@ -13,14 +13,15 @@ compContain = $("#comp-number");
 compContain.html("Goal: " + compNumber);
 compContain.addClass('comp-box');
 
-for (var i = 0; i < 4; i++) {
+for (var i = 1; i < 5; i++) {
     var random = Math.floor(Math.random() * 15) + 2;
     console.log(random);
+    var image="assets/images/gem" +i +".png";
     var crystal = $("<img>");
-    crystal.attr({"class": 'crystal', "data-random": random, "src": "assets/images/gem1.png"});
+    crystal.attr({"class": 'crystal', "data-random": random, "src":image });
     $(".container-crystal").append(crystal);
 }
-    $(function(){
+    //$(function(){
     //var newPhoto = $(".container-crystal").find("<img>").eq(4)
    //newPhoto.attr("src", "../assets/images/gem1.png");
 
@@ -28,7 +29,7 @@ for (var i = 0; i < 4; i++) {
     //photo.append("<img>");
     //photo.attr("src", "assets/images/gem1.png");
     //$(".newPhoto").append(photo);
-        });
+        //});
 
 }
 
